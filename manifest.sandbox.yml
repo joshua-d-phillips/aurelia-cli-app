@@ -4,6 +4,6 @@ applications:
   buildpack: staticfile_buildpack
   instances: 1
   memory: 128M
-  disk_quota: 64M
+  disk_quota: 128M
   health-check-type: port
   host: aurelia-cli-app-sandbox
