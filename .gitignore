@@ -376,3 +376,5 @@ typings/
 # dotenv environment variables file
 .env
 *.sqlite
+.vs/aurelia-cli-app/v15/.suo
+.vs/aurelia-cli-app/v15/.suo
