@@ -1,3 +1,22 @@
+define('app',["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var App = exports.App = function App() {
+    _classCallCheck(this, App);
+
+    this.message = "Hello, World";
+  };
+});
 define('environment',["exports"], function (exports) {
   "use strict";
 
@@ -50,25 +69,5 @@ define('resources/index',["exports"], function (exports) {
   exports.configure = configure;
   function configure(config) {}
 });
-define('app',["exports"], function (exports) {
-  "use strict";
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  var App = exports.App = function App() {
-    _classCallCheck(this, App);
-
-    this.message = "Hello, World";
-  };
-});
-define('app.html!text', ['module'], function(module) { module.exports = "<template><h1>${message}</h1></template>"; });
-define('404.html!text', ['module'], function(module) { module.exports = "<html><body><h1>Who's phone is ringing?</h1></body></html>"; });
+define('app.html!text', ['module'], function(module) { module.exports = "<template><h1>${message}</h1><input type=text value.bind=message><h3>Undefined property bind ${message.hello.world}</h3></template>"; });
 //# sourceMappingURL=app-bundle.js.map

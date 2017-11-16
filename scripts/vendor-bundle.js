@@ -25563,4 +25563,4 @@ define('aurelia-testing/wait',["require", "exports"], function (require, exports
 define('text/text',{});
 ;define('text', ['text/text'], function (main) { return main; });
 
-function _aureliaConfigureModuleLoader(){window.define=SystemJS.amdDefine; window.require=window.requirejs=SystemJS.amdRequire; SystemJS.config({"map":{"text":"text","app-bundle":"scripts/app-bundle.js"},"bundles":{"app-bundle":["environment","main","resources/index","app"]}});}
+function _aureliaConfigureModuleLoader(){window.define=SystemJS.amdDefine; window.require=window.requirejs=SystemJS.amdRequire; SystemJS.config({"map":{"text":"text","app-bundle":"scripts/app-bundle.js"},"bundles":{"app-bundle":["app","environment","main","resources/index"]}});}

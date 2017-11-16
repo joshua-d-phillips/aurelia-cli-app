@@ -146,3 +146,5 @@ Would you like to install the project dependencies?
  A requirement of the buildpack is to include an empty Staticfile file in the root of the application.
 
  See the deploy.sandbox.bat and manifest.sandbox.yml files for commands and configurations
+
+ - article about pushing on the production ready code to PCF... http://www.starkandwayne.com/blog/speed-up-the-staticfile-buildpack-only-deploy-the-dist-folder/
